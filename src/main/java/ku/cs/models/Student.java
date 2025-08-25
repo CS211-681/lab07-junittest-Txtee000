@@ -32,7 +32,13 @@ public class Student {
     // TODO: design grading system for Student
     public String grade()
     {
-        return score > 60 ? "P" : "F";
+        String grade = "";
+        if (score >= 80) {
+            grade = "A";
+        } else if (score >= 70) {
+            grade = "B";
+        }
+        return grade;
     }
 
     public boolean isId(String id) {
